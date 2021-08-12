@@ -26,6 +26,9 @@
   /* цвет рамка */
   --header-border-color: #ececec;
   --portfolio-card-border-color: #eeeeee;
+
+  /* Расстояние между элементами в сетке */
+  --gap: 30px;
 }
 
 body {
@@ -262,14 +265,14 @@ img {
 .feature-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-left: calc(-1 * var(--gap));
+  margin-top: calc(-1 * var(--gap));
 }
 
 .feature-list-item {
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc((100% - 4 * 30px) / 4);
+  margin-left: var(--gap);
+  margin-top: var(--gap);
+  flex-basis: calc(100% / 4 - var(--gap));
   /* outline: 2px solid purple; */
 }
 
@@ -286,14 +289,14 @@ img {
 .opportunity-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-left: calc(-1 * var(--gap));
+  margin-top: calc(-1 * var(--gap));
 }
 
 .opportunity-list-item {
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc((100% - 3 * 30px) / 3);
+  margin-left: var(--gap);
+  margin-top: var(--gap);
+  flex-basis: calc(100% / 3 - var(--gap));
 }
 /* .section-opportunity .list-item:not(:last-child) {
   margin-right: 30px;
@@ -334,15 +337,15 @@ img {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-left: calc(-1 * var(--gap));
+  margin-top: calc(-1 * var(--gap));
 }
 
 .team-list-item {
   background-color: var(--primary-bg-color);
-  margin-top: 30px;
-  margin-left: 30px;
-  flex-basis: calc((100% - 4 * 30px) / 4);
+  margin-left: var(--gap);
+  margin-top: var(--gap);
+  flex-basis: calc(100% / 4 - var(--gap));
 }
 
 /* .section-team .list-item:not(:last-child) {
@@ -449,12 +452,12 @@ img {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-left: calc(-1 * var(--gap));
+  margin-top: calc(-1 * var(--gap));
 }
 
 .project-list-item {
-  margin-left: 30px;
-  margin-top: 30px;
-  width: calc((100% - 3 * 30px) / 3);
+  margin-left: var(--gap);
+  margin-top: var(--gap);
+  flex-basis: calc(100% / 3 - var(--gap));
 }
