@@ -71,6 +71,7 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .list {
@@ -97,9 +98,21 @@ img {
   color: var(--alt-text-color);
 }
 
-.hidden-title {
-  display: none;
+/* ================== Visually Hidden ================ */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+/* =============== End of Visually Hidden ============= */
 
 .container {
   width: 1200px;
@@ -117,8 +130,8 @@ img {
 
 /* ================= Header ================ */
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
   border-bottom: 1px solid var(--header-border-color);
 }
 /* выстраиваем в ряд навигацию (лого+нав) и контакты */
@@ -179,7 +192,13 @@ img {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+
+  display: block;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
@@ -315,8 +334,10 @@ img {
 }
 /* Карточка Команда */
 .team-list-content {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 10px;
+  /* верхний и нижний падинги по 30 взяты с макета
+  а боковые падинги по 10 придумал сам 
+  для защиты от переполнения */
 }
 
 .team-persona {
@@ -357,11 +378,17 @@ img {
   background-color: var(--footer-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  /* margin-right: 0; */
+}
+
+.footer-contact {
+  margin-top: 30px;
 }
 
 /* Logo Footer*/
 .footer .logo {
   color: var(--logo-footer-color);
+  margin-right: 0;
 }
 
 /* Footer Contacts */
@@ -380,10 +407,6 @@ img {
 .footer-contact .link:hover,
 .footer-contact .link:focus {
   color: var(--accent-color);
-}
-
-.footer-contact .list {
-  margin-top: 20px;
 }
 
 .footer-contact .list-item:not(:last-child) {
