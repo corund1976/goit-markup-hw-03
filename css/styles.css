@@ -103,13 +103,13 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: 2px solid yellowgreen;
+  /* outline: 2px solid yellowgreen; */
 }
 
 /* ================= Header ================ */
