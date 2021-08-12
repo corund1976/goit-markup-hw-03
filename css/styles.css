@@ -269,7 +269,7 @@ img {
 .feature-list-item {
   margin-left: 30px;
   margin-top: 30px;
-  width: calc((100% - 4 * 30px) / 4);
+  flex-basis: calc((100% - 4 * 30px) / 4);
   /* outline: 2px solid purple; */
 }
 
@@ -293,7 +293,7 @@ img {
 .opportunity-list-item {
   margin-left: 30px;
   margin-top: 30px;
-  width: calc((100% - 3 * 30px) / 3);
+  flex-basis: calc((100% - 3 * 30px) / 3);
 }
 /* .section-opportunity .list-item:not(:last-child) {
   margin-right: 30px;
@@ -342,7 +342,7 @@ img {
   background-color: var(--primary-bg-color);
   margin-top: 30px;
   margin-left: 30px;
-  width: calc((100% - 4 * 30px) / 4);
+  flex-basis: calc((100% - 4 * 30px) / 4);
 }
 
 /* .section-team .list-item:not(:last-child) {
